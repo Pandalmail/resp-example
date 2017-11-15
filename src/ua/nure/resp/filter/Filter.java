@@ -4,9 +4,9 @@ import java.io.File;
 
 public abstract class Filter {
 
-	public Filter nextFilter;
+	private Filter nextFilter;
 
-	public void setNextFilter(Filter nextFilter) {
+	public Filter(Filter nextFilter) {
 		this.nextFilter = nextFilter;
 	}
 
