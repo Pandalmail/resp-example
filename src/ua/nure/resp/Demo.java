@@ -18,8 +18,7 @@ public class Demo {
 	static {
 		Filter nextFilter = new NameFilter(FILE_NAME);
 
-		FILE_FILTER = new SizeFilter(MAX_FILE_SIZE);
-		FILE_FILTER.setNextFilter(nextFilter);
+		FILE_FILTER = new SizeFilter(nextFilter, MAX_FILE_SIZE);
 	}
 
 	public static void main(String[] args) {
